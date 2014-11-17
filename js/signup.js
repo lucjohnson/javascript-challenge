@@ -22,20 +22,12 @@ function onReady() {
 		}
 	});
 
-<<<<<<< HEAD
 	$('#cancelButton').click(function() {
 		$('#confirm-exit-modal').modal();
 	});
 
 	$('#confirm-exit-button').click(function() {
 		window.location.href = 'http://google.com';
-=======
-	cancelButton.addEventListener('click', function() {
-		var confirmation = window.confirm("Are you sure you would like to leave the survey?");
-		if (confirmation) {
-			window.location.assign("http://google.com");
-		}
->>>>>>> 60cbe1672c2bde403f5cd49e6123b6891249c424
 	});
 
 	var myForm = document.getElementById("signup");
