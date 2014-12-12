@@ -22,13 +22,7 @@ function onReady() {
 		}
 	});
 
-	$('#cancelButton').click(function() {
-		$('#confirm-exit-modal').modal();
-	});
-
-	$('#confirm-exit-button').click(function() {
-		window.location.href = 'http://google.com';
-	});
+	document.getElementById("confirm-exit-button").addEventListener("click", function() {window.location.href = 'http://google.com';});
 
 	var myForm = document.getElementById("signup");
 	signup.addEventListener('submit', onSubmit);
